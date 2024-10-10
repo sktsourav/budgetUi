@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Login() {
     return (
         <div className="flex items-center justify-center min-h-screen">
@@ -38,8 +40,8 @@ export default function Login() {
                                     type="email"
                                     autoComplete="email"
                                     required
-                                    className="w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset 
-                                    ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 
+                                    dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                             </div>
                         </div>
 
@@ -57,8 +59,8 @@ export default function Login() {
                                     type="password"
                                     autoComplete="current-password"
                                     required
-                                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset 
-                                    ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 
+                                    dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                             </div>
                         </div>
 
@@ -70,8 +72,12 @@ export default function Login() {
 
                     <p className="mt-10 text-center text-sm text-gray-500">
                         Not a member?
-                        <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"><u>Sign Up</u></a>
+                        <Link href="Sign Up" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-400 underline">Sign Up</Link>
                     </p>
+                    <p className="text-center font-semibold leading-6 text-indigo-600 hover:text-indigo-400 underline">
+                        <Link href="/">Home</Link>
+                    </p>
+
                 </div>
             </div>
         </div>
